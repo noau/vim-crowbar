@@ -6,7 +6,8 @@ syn keyword crowbarConditional if else elsif
 syn keyword crowbarLoop for
 syn keyword crowbarInternalFunction print input
 
-syn region crowbarString start=/\"/ end=/\"/ skip=/\\\"/
+syn region crowbarString start=/\"/ end=/\"/ skip=/\\\"|\\n|\\t/ contains=crowbarStringFormat
+syn match crowbarStringFormat /\\"|\\n|\\t/
 
 hi crowbarConditional guifg=#8317A0
 hi crowbarLoop guifg=#1B9D3C
