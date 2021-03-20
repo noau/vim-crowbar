@@ -8,7 +8,7 @@ syn keyword Conditional elsif
 syn keyword Loop for
 syn keyword InternalFunction print input
 
-syn match crowbarString \".*?\"
+syn region crowbarString start=" end=" skip=\"
 
 hi Conditional guifg=#8DA5ED
 hi Loop guifg=#55EEAA
