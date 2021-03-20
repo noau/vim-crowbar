@@ -8,9 +8,9 @@ syn keyword crowbarInternalFunction print input
 
 syn region crowbarString start=/\"/ end=/\"/ skip=/\\\"/
 
-hi crowbarConditional guifg=#8DA5ED
-hi crowbarLoop guifg=#55DDBB
+hi crowbarConditional guifg=#8317A0
+hi crowbarLoop guifg=#1B9D3C
 hi crowbarInternalFunction guifg=#BD163E
-hi crowbarString guifg=#8EEBF8
+hi crowbarString guifg=#1B897E
 
 let b:current_syntax = "crowbar"
