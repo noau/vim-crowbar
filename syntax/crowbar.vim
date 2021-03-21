@@ -6,6 +6,7 @@ syn keyword crowbarConditional if else elsif
 syn keyword crowbarLoop for
 syn keyword crowbarInternalFunction print input
 
+syn match crowbarComment /#.*/
 syn match crowbarOperator /\+/
 syn region crowbarString start=/\"/ end=/\"/ skip=/\\\"|\\n|\\t/ contains=crowbarStringFormat
 syn match crowbarStringFormat '\\\n' contained
@@ -16,5 +17,6 @@ hi crowbarInternalFunction guifg=#BD163E
 hi crowbarString guifg=#1B897E
 hi crowbarStringFormat guifg=#9A7B14
 hi crowbarOperator guifg=#104298
+hi crowbarComment guifg=#666666
 
 let b:current_syntax = "crowbar"
