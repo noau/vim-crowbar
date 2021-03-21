@@ -7,7 +7,7 @@ syn keyword crowbarLoop for
 syn keyword crowbarInternalFunction print input
 
 syn match crowbarComment /#.*/
-syn match crowbarOperator /+/
+syn match crowbarOperator /+/-/\*/\//
 syn region crowbarString start=/\"/ end=/\"/ skip=/\\\"|\\n|\\t/ contains=crowbarStringFormat
 syn match crowbarStringFormat '\\\n' contained
 
