@@ -15,7 +15,7 @@ syn match crowbarOperator /\/\%(=\|\ze[^/*]\)/
 
 syn region crowbarString start=/\"/ end=/\"/ skip=/\\\"|\\n|\\t/ contains=crowbarStringFormat
 syn match crowbarStringFormat '\\\n' contained
-syn match crowbarNumber /[0-9]*\.[0-9]*/
+syn match crowbarNumber /[0-9]*(\.[0-9]*)?/
 
 hi crowbarConditional guifg=#8317A0
 hi crowbarLoop guifg=#1B9D3C
